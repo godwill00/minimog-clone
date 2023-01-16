@@ -35,7 +35,7 @@
     </div>
 
 
-    <nav class="first-nav">
+    <div class="first-nav">
         <div class="followers-div">
             <a class="followers" href="#">
                 <i class="fa fa-facebook" aria-hidden="true"></i> &nbsp; 300k Followers
@@ -87,42 +87,40 @@
             </select>
 
         </div>
-    </nav>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <ul class="navbar-nav mr-2 bolder">
+                <li class="nav-item active dropdown" onmouseover="handleHover('homeDropdown')" onmouseleave="handleLeave('homeDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="homeDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Home
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" id="homeDropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                     </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" onmouseover="handleHover('shopDropdown')" onmouseleave="handleLeave('shopDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="shopDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Shop
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" id="shopDropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-
                     </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" onmouseover="handleHover('productsDropdown')" onmouseleave="handleLeave('productsDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="productsDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Products
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" id="productsDropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
@@ -130,12 +128,12 @@
                     </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" onmouseover="handleHover('pagesDropdown')" onmouseleave="handleLeave('pagesDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="pagesDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Pages
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" id="pagesDropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">About us</a>
                         <a class="dropdown-item" href="#">Contact 1</a>
                         <a class="dropdown-item" href="#">Contact 2</a>
@@ -145,25 +143,25 @@
                     </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" onmouseover="handleHover('blogsDropdown')" onmouseleave="handleLeave('blogsDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="blogsDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Blogs
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    </a>
+                    <div class="dropdown-menu" id="blogsDropdownMenu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item dropdown" onmouseover="handleHover('featuresDropdown')" onmouseleave="handleLeave('featuresDropdown')">
+                    <a class="nav-link dropdown-toggle dark-border" href="#" id="featuresDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Feautres
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" id="featuresDropdownMenu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
@@ -172,101 +170,45 @@
                 </li>
             </ul>
 
-            <div class="mini-logo">
+            <div class="mini-logo mr-auto ml-5">
                 <img class="logo" src="../public/images/minimog-logo.avif">
             </div>
 
-            <div class="fa">
+            <div class="navbar-icons ml-auto">
                 <a class="" href="#">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-search fa-2x" aria-hidden="true"></i>
                 </a>
 
                 <a class="" href="#">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
                 </a>
 
                 <a class="" href="#">
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
                 </a>
 
                 <a class="" href="#">
-                   <i class="fa fa-bag-shopping" aria-hidden="true"></i>
+                    <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
                 </a>
-
             </div>
         </div>
     </nav>
 
+    <script type="text/javascript">
+        function handleHover(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.classList.add("show");
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="/onlinestore/public/images/girl.webp" alt="First slide">
-            </div>
-            <!-- <div class="carousel-item"> -->
-                <!-- <img class="d-block w-100" -->
-                    src="/onlinestore/public/images/fashion.webp"
-                    alt="Second slide">
-            </div>
-            <!-- <div class="carousel-item"> -->
-                <!-- <img class="d-block w-100" -->
-                    src="/onlinestore/public/images/girl.webp"
-                    alt="Third slide">
-            </div>
+            var dropdownMenu = document.getElementById(id + "Menu");
+            dropdownMenu.classList.add("show");
+        }
 
-            <div class="swiper-pagination">
-                <span class="sf__dot sf__dot-active"></span>
-                <span class="sf__dot"></span>
-            </div>
-        </div>
-    </div>
+        function handleLeave(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.classList.remove("show");
 
-    <div class="alert sf-campaign-banner" role="alert">
-        <div class="sf-campaign-banner__wrapper">
-            🎉 Foxify release - BFCM giveaway 🎁 up to <strong>$700</strong>.
-            <a href="_" target="_blank" class="sf-campaign-banner__link">Learn more</a>
-            <button type="button" class="close" data-dismiss="alert" aria-label="close">
-                <div>&times;</div>
-            </button>
-        </div>
-    </div>
-
-
-    <div class="section-header__container container-fluid">
-        <div class="section__header relative w-full text-left">
-            <h2 class="section__head">Season Collection</h2>
-            <div class="collection-list__controls hide-on-mb flex absolute">
-                <div class="sf-slider__controls flex items-center justify-center mt-5 md:mt-0 -mx-2 justify-start">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="sf__ms sf-grid sf__ms--slider collection-list__inner--overflow">
-        <div class="sf__ms-wrapper flex ">
-            <div class="swiper-wrapper">
-                <div class="sf-column swiper-slide swiper-slide-duplicate"></div>
-                <div class="sf-column swiper-slide swiper-slide-duplicate"></div>
-                <div class="sf-column swiper-slide swiper-slide-duplicate"></div>
-                <div class="sf-column swiper-slide swiper-slide-duplicate swiper-slide-prev"></div>
-                <div class="sf-column swiper-slide swiper-slide-duplicate swiper-slide-active"></div>
-                <link href="/onlinestore/public/images/liquid-bg.jpg">
-                <div class="sf-column swiper-slide swiper-slide-duplicate swiper-slide-next"></div>
-                <link
-                    href="/onlinestore/public/images/luxury-ornamental-mandala-design-background-260nw-1575575629.webp">
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-item">
-        <img src="..." alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...</h5>
-          <p>...</p>
-        </div>
-      </div>
-
-
-
+            var dropdownMenu = document.getElementById(id + "Menu");
+            dropdownMenu.classList.remove("show");
+        }
+    </script>
 </body>
